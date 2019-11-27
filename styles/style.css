@@ -381,10 +381,109 @@ footer .media-link {
 .top-content .image-div {
   display: none;
 }
+.hero {
+  margin: 0 -2rem;
+  position: relative;
+  height: 30rem;
+}
+.slides {
+  background-position: center;
+  background-size: cover;
+  height: 30rem;
+  padding: 2rem;
+  width: calc(100% - 4rem);
+}
+.slides:nth-of-type(1) {
+  background-image: url('/assets/stand.jpg');
+}
+.slides:nth-of-type(2) {
+  background-image: url('/assets/office.jpg');
+}
+.slides:nth-of-type(3) {
+  background-image: url('/assets/shake.jpg');
+}
+.slides:nth-of-type(4) {
+  background-image: url('/assets/gear.jpg');
+}
+.slides:nth-of-type(5) {
+  background-image: url('/assets/fuel.jpg');
+}
+.slides .content {
+  display: flex;
+  flex-direction: column;
+}
+.slides .content .body {
+  height: 12rem;
+  background: rgba(255, 255, 255, 0.81);
+  font-size: 1.1rem;
+  line-height: 1.7rem;
+  font-weight: 300;
+  padding: 1rem;
+  margin: 1rem 0;
+}
+.slides .content h3 {
+  white-space: pre-line;
+  font-size: 2.2rem;
+  line-height: 2.2rem;
+  margin: 0;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.3);
+}
+.slides .content .body p {
+  margin: 0;
+}
+.slides .content a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.5rem;
+  width: 10rem;
+  background-color: #da851a;
+  border: 1px solid #da851a;
+  font-size: 1rem;
+  color: white;
+  text-decoration: none;
+  letter-spacing: 0.05rem;
+}
+.slides:nth-of-type(1) .content h3 {
+  color: #810216;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+.slide-btns {
+  display: none;
+}
+@-webkit-keyframes fade {
+  from {
+    transform: scale(1);
+    opacity: 0.4;
+  }
+  to {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+}
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
 
 @media screen and (min-width: 650px) {
   body {
     padding: 0 5rem;
+  }
+  .hero {
+    margin: 0 -5rem 5rem;
+  }
+  .slides .content {
+    padding: 0 10rem;
+    width: 30rem;
   }
   .news-div .bottom-div {
     display: grid;
@@ -482,6 +581,15 @@ footer .media-link {
   body {
     padding: 0 10rem;
     font-size: 2rem;
+  }
+  .hero {
+    margin: 0 -10rem 15rem;
+  }
+  .slides {
+    height: 50vh;
+  }
+  .slides .content {
+    padding: 0px 15%;
   }
   .navbar {
     border-top: 0.5rem solid #3f7b47;
@@ -668,6 +776,9 @@ footer .media-link {
   body {
     padding: 0 15%;
   }
+  .hero {
+    margin: 0 -25% 15rem;
+  }
   .navbar {
     margin: 0 -25%;
   }
@@ -697,6 +808,12 @@ footer .media-link {
 
 @media screen and (min-width: 1600px) {
   body {
+    padding: 0 20%;
+  }
+  .hero {
+    margin: 0 -40% 25rem;
+  }
+  .slides .content {
     padding: 0 20%;
   }
   .navbar {
