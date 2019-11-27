@@ -5,6 +5,7 @@ const chatBotDiv = document.querySelector('.chat-bot');
 const chatBotHeader = document.querySelector('.chat-bot-header');
 const chatBotForm = document.querySelector('.chat-bot-form');
 const chatBotBtn = document.querySelector('.chat-bot .img-div');
+const slides = document.getElementsByClassName('slides');
 
 hamburger.addEventListener('click', () =>
   mobileLinksDiv.classList.add('displayed')
@@ -13,12 +14,6 @@ hamburger.addEventListener('click', () =>
 cancelMobileNav.addEventListener('click', () =>
   mobileLinksDiv.classList.remove('displayed')
 );
-
-// chatBotDiv.addEventListener('mouseover', () => {
-//   chatBotDiv.classList.contains('chat-bot-hovered')
-//     ? chatBotDiv.classList.remove('chat-bot-hovered')
-//     : chatBotDiv.classList.add('chat-bot-hovered');
-// });
 
 chatBotBtn.addEventListener('click', () => {
   if (chatBotDiv.classList.contains('show-chat-bot')) {
@@ -31,3 +26,28 @@ chatBotBtn.addEventListener('click', () => {
     chatBotForm.classList.add('show-chat-bot-form');
   }
 });
+
+let slideIndex = 0;
+showSlides();
+
+function plusSlides(n) {
+  showSlides((slideIndex += n));
+}
+
+function showSlides(n) {
+  if (n > slides.length) {
+    slideIndex = 1;
+  }
+  if (n < 1) {
+    slideIndex = slides.length;
+  }
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = 'none';
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {
+    slideIndex = 1;
+  }
+  slides[slideIndex - 1].style.display = 'block';
+  setTimeout(showSlides, 5000);
+}
