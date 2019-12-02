@@ -59,7 +59,7 @@ function showSlides(n) {
     slideIndex = 1;
   }
   slides[slideIndex - 1].style.display = 'block';
-  setTimeout(showSlides, 5000);
+  setTimeout(showSlides, 30000);
 }
 
 function handleEnter() {
