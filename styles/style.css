@@ -636,12 +636,15 @@ footer .media-link {
   .slide-control-right {
     right: 0;
   }
-  /* .slide-control .img-preview {
+  .slide-control .img-preview {
     position: absolute;
     height: 10rem;
     width: 10rem;
-
-    transition: 1s ease;
+    transition: 100ms ease;
+    background-position: center;
+    background-size: cover;
+    height: 10rem;
+    width: 20rem;
   }
   .slide-control-left .img-preview {
     left: 0;
@@ -655,7 +658,7 @@ footer .media-link {
   }
   .slide-control:hover .img-preview {
     transform: translateX(0);
-  } */
+  }
   .navbar {
     border-top: 0.5rem solid #3f7b47;
     margin: 0 -10rem;
