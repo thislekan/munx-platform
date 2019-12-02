@@ -587,7 +587,7 @@ footer .media-link {
     height: unset;
   }
   .slides {
-    height: 70vh;
+    height: 75vh;
   }
   .slides .content {
     padding: 0px 15%;
@@ -851,9 +851,6 @@ footer .media-link {
     transform: rotate(-2.5deg);
     z-index: 1;
   }
-  /* .statement {
-    padding: 10rem 2rem;
-  } */
 }
 
 @media screen and (min-width: 1000px) {
