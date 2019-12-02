@@ -394,19 +394,19 @@ footer .media-link {
   width: calc(100% - 4rem);
 }
 .slides:nth-of-type(1) {
-  background-image: url('/assets/stand.jpg');
+  background-image: url('../assets/stand.jpg');
 }
 .slides:nth-of-type(2) {
-  background-image: url('/assets/office.jpg');
+  background-image: url('../assets/office.jpg');
 }
 .slides:nth-of-type(3) {
-  background-image: url('/assets/shake.jpg');
+  background-image: url('../assets/shake.jpg');
 }
 .slides:nth-of-type(4) {
-  background-image: url('/assets/gear.jpg');
+  background-image: url('../assets/gear.jpg');
 }
 .slides:nth-of-type(5) {
-  background-image: url('/assets/fuel.jpg');
+  background-image: url('../assets/fuel.jpg');
 }
 .slides .content {
   display: flex;
