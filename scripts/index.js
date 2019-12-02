@@ -6,6 +6,16 @@ const chatBotHeader = document.querySelector('.chat-bot-header');
 const chatBotForm = document.querySelector('.chat-bot-form');
 const chatBotBtn = document.querySelector('.chat-bot .img-div');
 const slides = document.getElementsByClassName('slides');
+const navbar = document.querySelector('.navbar');
+const triggers = document.querySelectorAll('.dropdown-trigger');
+
+window.onscroll = () => {
+  if (window.pageYOffset > mobileLinksDiv.offsetHeight + 50) {
+    navbar.classList.add('sticky');
+  } else {
+    navbar.classList.remove('sticky');
+  }
+};
 
 hamburger.addEventListener('click', () =>
   mobileLinksDiv.classList.add('displayed')
@@ -51,3 +61,19 @@ function showSlides(n) {
   slides[slideIndex - 1].style.display = 'block';
   setTimeout(showSlides, 5000);
 }
+
+function handleEnter() {
+  this.classList.add('trigger-enter');
+  setTimeout(() => this.classList.add('trigger-enter-active'), 150);
+}
+function handleLeave() {
+  this.classList.remove('trigger-enter');
+  setTimeout(() => this.classList.remove('trigger-enter-active'), 150);
+}
+
+triggers.forEach((trigger) =>
+  trigger.addEventListener('mouseenter', handleEnter)
+);
+triggers.forEach((trigger) =>
+  trigger.addEventListener('mouseleave', handleLeave)
+);
