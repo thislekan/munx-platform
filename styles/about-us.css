@@ -1,0 +1,358 @@
+.about-us .content {
+  height: 20rem;
+  width: 100%;
+  background-image: url('../assets/tanks.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.about-us .content div {
+  background-color: rgba(246, 196, 51, 0.78);
+  height: calc(100% - 6rem);
+  width: calc(100% - 6rem);
+  padding: 3rem;
+  font-size: 2.4rem;
+}
+.about-us-intro,
+.about-us {
+  margin-top: 5rem;
+}
+.about-us-intro h3 {
+  word-spacing: 1rem;
+  font-size: 2rem;
+}
+.about-us-intro p {
+  line-height: 1.8rem;
+  word-spacing: 0.8rem;
+}
+.about-us-intro .img-div {
+  height: 25rem;
+  width: 100%;
+  margin: 5rem 0;
+}
+.about-us-intro img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 2.5rem;
+}
+.cards-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.cards-div .card {
+  height: 20rem;
+  background-color: rgba(246, 196, 51, 0.78);
+  border-radius: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem;
+  text-align: center;
+}
+.history,
+.milestones,
+.brand,
+.board,
+.management {
+  margin: 3rem 0;
+}
+.history .content,
+.milestones .content,
+.brand .content {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: center;
+  background-color: #f4f4f4;
+  padding-bottom: 4rem;
+}
+.history .pure-text,
+.milestones .pure-text,
+.brand .pure-text,
+.board .pure-text,
+.management .pure-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 0 1.5em;
+}
+.history .pure-text h2,
+.milestones .pure-text h2,
+.brand .pure-text h2,
+.board .pure-text h2,
+.management .pure-text h2 {
+  font-size: 3.5rem;
+}
+.history .pure-text p,
+.milestones .pure-text p {
+  word-spacing: 1rem;
+  line-height: 2.2rem;
+}
+.history .img-div,
+.milestones .img-div,
+.brand .img-div,
+.board .img-div,
+.management .img-div {
+  background-image: url('../assets/tanks.jpg');
+  background-position: center;
+  background-size: cover;
+  height: 25rem;
+  width: 100%;
+}
+.history .btn-link,
+.milestones .btn-link,
+.brand .btn-link,
+.board .btn-link,
+.management .btn-link {
+  margin: 2rem 0 0 2rem;
+  display: flex;
+  height: 3.5rem;
+  width: 11rem;
+  border-radius: 0.8rem;
+  text-decoration: none;
+  background-color: #810216;
+  color: white;
+  align-items: center;
+  justify-content: center;
+}
+.milestones .content {
+  flex-direction: column;
+  padding-bottom: unset;
+  margin: 2rem 0;
+}
+.milestones .img-div {
+  background-image: url('../assets/milestone.jpg');
+  margin-top: 4rem;
+}
+.brand .img-div {
+  background-image: url('../assets/logo.jpeg');
+}
+.board,
+.management {
+  background-color: #f4f4f4;
+  padding-bottom: 5rem;
+}
+.board .img-div {
+  background-image: url('../assets/seats.jpg');
+}
+.management .img-div {
+  background-image: url('../assets/hands.jpg');
+}
+.about-us-nav {
+  position: relative;
+  background-color: #3f7b47;
+  margin: 0 -2rem;
+  height: 5rem;
+  padding: 0 2rem;
+}
+.about-us-nav::after {
+  content: '';
+  background-color: #3f7b47;
+  position: absolute;
+  width: 110%;
+  height: 30rem;
+  bottom: -16.5rem;
+  left: -20px;
+  -ms-transform: rotate(-7.5deg);
+  -webkit-transform: rotate(-7.5deg);
+  transform: rotate(-4.5deg);
+  z-index: -2;
+}
+.about-us-nav .fa-bars {
+  color: white;
+}
+.about-us .content,
+.about-us .content div {
+  border-radius: 2.5rem;
+  border-top-right-radius: unset;
+}
+
+@media screen and (min-width: 650px) {
+  .about-us-nav::after {
+    width: calc(100% + 10rem);
+    left: -5rem;
+  }
+  .about-us .content {
+    position: relative;
+    overflow: hidden;
+  }
+  .about-us .content div {
+    background-color: rgba(255, 255, 255, 0.9019607843137255);
+    border-radius: unset;
+    width: 30%;
+    height: 8rem;
+    padding: 42px 40px;
+    transform: rotate(-2.5deg);
+    position: absolute;
+    margin-top: -20px;
+    margin-left: -17px;
+  }
+  .about-us .content h1 {
+    margin: 1rem;
+  }
+  .cards-div .content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 0 5rem;
+  }
+  .history .content .text-div,
+  .milestones .content.text-div,
+  .brand .content .text-div,
+  .board .text-div,
+  .management .text-div {
+    padding: 2rem;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .about-us-nav {
+    height: unset;
+    margin: 0 -10rem;
+  }
+  .about-us-nav::after {
+    width: calc(100% + 30rem);
+    left: -10rem;
+  }
+  .about-us-nav .navbar__links-div .top-div a,
+  .about-us-nav .navbar__links-div .parent-link a {
+    color: #f4f4f4;
+  }
+  .sticky {
+    position: fixed;
+    top: 0;
+    z-index: 5;
+    background: white;
+    width: 100%;
+    margin: unset;
+    left: 0;
+    animation: stickyNav 1s ease;
+  }
+  @keyframes stickyNav {
+    0% {
+      transform: translateY(-15rem);
+    }
+
+    100% {
+      transform: translateY(0);
+    }
+  }
+  .sticky .navbar__wrapper {
+    height: unset;
+  }
+  .sticky .navbar__links-div .top-div {
+    display: none;
+  }
+  .sticky::after {
+    display: none;
+  }
+  .about-us-nav.sticky {
+    height: unset;
+  }
+  .about-us-nav.sticky .navbar__links-div .parent-link a {
+    color: #3f7b47;
+  }
+  .about-us .content {
+    height: 25rem;
+    box-shadow: 0 2px 2px 0px transparent;
+  }
+  .about-us-intro .content {
+    margin: 10rem 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5rem;
+  }
+  .about-us-intro .content .img-div {
+    height: 100%;
+    margin: unset;
+  }
+  .about-us-intro .content .text-div p {
+    font-size: 1.4rem;
+    line-height: 2rem;
+  }
+  .cards-div .card {
+    height: 30rem;
+  }
+  .history .content,
+  .milestones .content,
+  .brand .content,
+  .team-div .content {
+    display: grid;
+    height: 35rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 'front back';
+    padding-bottom: unset;
+  }
+  .history .content .img-div,
+  .milestones .content .img-div,
+  .brand .img-div {
+    grid-area: front;
+    height: 100%;
+  }
+  .history .content .text-div,
+  .milestones .content .text-div,
+  .brand .text-div {
+    grid-area: back;
+    padding: 3rem;
+  }
+  .history .content .text-div h2,
+  .milestones .content .text-div h2,
+  .brand .text-div h2 {
+    margin: 0;
+  }
+  .history .content .text-div p,
+  .milestones .content .text-div p,
+  .brand .text-div p {
+    font-size: 1.4rem;
+  }
+  .history .content .btn-link,
+  .milestones .content .btn-link,
+  .brand .btn-link,
+  .board .btn-link,
+  .management .btn-link {
+    font-size: 1.4rem;
+    margin-left: 5rem;
+  }
+  .milestones .content .img-div {
+    margin: unset;
+    grid-area: back;
+  }
+  .milestones .content .text-div {
+    grid-area: front;
+  }
+  .history,
+  .milestones,
+  .brand,
+  .board,
+  .management {
+    margin: 5rem 0;
+  }
+  .team-div {
+    margin: 5rem 0 25rem 0;
+  }
+  .team-div .content {
+    grid-gap: 5rem;
+  }
+  .team-div .board,
+  .team-div .management {
+    margin: 0;
+    padding-bottom: 2rem;
+  }
+  .board .btn-link,
+  .management .btn-link {
+    margin-left: 3rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .about-us-nav {
+    margin: 0 -25%;
+  }
+  .about-us-nav.sticky {
+    margin: 0;
+  }
+}
