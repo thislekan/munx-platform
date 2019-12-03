@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Document</title>
+    <title>Home Page</title>
     <link rel="stylesheet" href="styles/style.css" />
     <link
       href="https://fonts.googleapis.com/css?family=Raleway:300,400,600,700,800,900&display=swap"
@@ -32,7 +32,9 @@
                 <div class="parent-link"><a href="">HOME</a></div>
               </li>
               <li class="dropdown-trigger">
-                <div class="parent-link"><a href="">ABOUT US</a></div>
+                <div class="parent-link">
+                  <a href="/pages/about.html">ABOUT US</a>
+                </div>
                 <ul class="child-links-container">
                   <li>
                     <a href="">OUR HISTORY</a>
@@ -389,57 +391,58 @@
           </div>
         </div>
       </section>
-      <footer>
-        <div class="logo">
-          <img src="assets/castrol.png" alt="placeholder logo" />
-          <p class="disclaimer">Sole Licensee Castrol Products</p>
+    </main>
+    <footer>
+      <div class="logo">
+        <img src="assets/castrol.png" alt="placeholder logo" />
+        <p class="disclaimer">Sole Licensee Castrol Products</p>
+      </div>
+      <div class="content">
+        <div class="soc-media">
+          <a href="" class="grey-link media-link">
+            <span class="fa fa-facebook-f"></span>
+          </a>
+          <a href="" class="grey-link media-link">
+            <span class="fa fa-twitter"></span>
+          </a>
+          <a href="" class="grey-link media-link">
+            <span class="fa fa-instagram"></span>
+          </a>
+          <a href="" class="grey-link media-link">
+            <span class="fa fa-youtube"></span>
+          </a>
         </div>
-        <div class="content">
-          <div class="soc-media">
-            <a href="" class="grey-link media-link">
-              <span class="fa fa-facebook-f"></span>
-            </a>
-            <a href="" class="grey-link media-link">
-              <span class="fa fa-twitter"></span>
-            </a>
-            <a href="" class="grey-link media-link">
-              <span class="fa fa-instagram"></span>
-            </a>
-            <a href="" class="grey-link media-link">
-              <span class="fa fa-youtube"></span>
-            </a>
+        <div class="copyright">
+          <div class="company">
+            <a href="">Eterna Plc PO Terms & Conditions</a>
+            <p>©2019 Eterna Plc. All rights reserved</p>
           </div>
-          <div class="copyright">
-            <div class="company">
-              <a href="">Eterna Plc PO Terms & Conditions</a>
-              <p>©2019 Eterna Plc. All rights reserved</p>
-            </div>
-          </div>
-        </div>
-      </footer>
-      <div class="chat-bot">
-        <div class="chat-bot-header">
-          <p>Chat</p>
-          <div class="img-div">
-            <img src="assets/help.svg" alt="chat icon" />
-          </div>
-        </div>
-        <div class="chat-bot-form">
-          <p>Welcome to Eterna Plc Customer Service Live Chat</p>
-          <form action="">
-            <input type="text" name="name" id="" placeholder="Name*" />
-            <input type="email" name="email" id="" placeholder="Email*" />
-            <input type="text" name="phone" id="" placeholder="Phone Number*" />
-            <textarea
-              name="question"
-              id=""
-              placeholder="Enter your question*"
-            ></textarea>
-            <input type="button" value="Send Char Request" class="submit-btn" />
-          </form>
         </div>
       </div>
-    </main>
+    </footer>
+    <div class="chat-bot">
+      <div class="chat-bot-header">
+        <p>Chat</p>
+        <div class="img-div">
+          <img src="assets/help.svg" alt="chat icon" />
+        </div>
+      </div>
+      <div class="chat-bot-form">
+        <p>Welcome to Eterna Plc Customer Service Live Chat</p>
+        <form action="">
+          <input type="text" name="name" id="" placeholder="Name*" />
+          <input type="email" name="email" id="" placeholder="Email*" />
+          <input type="text" name="phone" id="" placeholder="Phone Number*" />
+          <textarea
+            name="question"
+            id=""
+            placeholder="Enter your question*"
+          ></textarea>
+          <input type="button" value="Send Char Request" class="submit-btn" />
+        </form>
+      </div>
+    </div>
+    <script src="scripts/general.js"></script>
     <script src="scripts/index.js"></script>
   </body>
 </html>
